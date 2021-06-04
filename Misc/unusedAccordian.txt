@@ -1,0 +1,135 @@
+//ACCORDIAN CSS
+/* The following is the styling for the accordian */
+
+.accordion {
+    background-color: #333333;
+    color:white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: Print Bold;
+    font-size: 30px;
+}
+
+.accordion:after {
+    content: '\25be';
+    color:white;
+    float: right;
+    margin-left: 5px;
+
+    transform: scale(1.5);
+}
+
+.active:after {
+    content: "\25b4";
+}
+
+.active,
+.accordion:hover {
+    background-color: #555555;
+}
+
+.panel{
+    padding: 0 18px;
+    background-color: #eee;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+
+//ACCORDIAN JS
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
+}
+
+//ACCORDIAN HTML
+<body>
+    <button class="accordion">Past Projects</button>
+    <div class="panel">
+        <p2>
+            <ol>
+                <li>
+                    <span style="font-family: Print Bold;">HallBooker (Aug '19 - Dec '19)</span>
+                    <ul>
+                        <li>Text based Personal Assistant Chatbot to aid NUS hall admins in handling hall facility
+                            booking needs
+                        </li>
+                        <li>Group project under NUS’s CS2113T Object Oriented Programming module
+                        </li>
+                        <li>Programmed in Java</li>
+                        <li>Developed the user component to better manage tracking of admins using the system
+                        </li>
+                        <li>Developed features with the object-oriented programming paradigm in mind
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span style="font-family: Print Bold;">RecycleSG (May '19 - Aug '19)</span>
+                    <ul>
+                        <li>Android application that aims to improve recycling knowledge, increase convenience and
+                            encourage recycling efforts, through a gamification system
+                        </li>
+                        <li>Pair-work project under NUS’s CP2106 Independent Software Development over the summer break
+                        </li>
+                        <li>Programmed in Java with Android Studio</li>
+                        <li>Independent pair work project with minimal supervision/guidance
+                        </li>
+                        <li>Resourceful and took the initiative to self-learn Java language to improve overall
+                            functionality of the app
+                        </li>
+                        <li>Developed the AR feature using Sceneform/ARCore & main UI of the app
+                        </li>
+                        <li>Awarded Apollo 11 difficulty level, highest level attainable
+                        </li>
+                        <li>Received the Judges' Choice Award, for being one of the more recognized projects
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </p2>
+    </div>
+
+    <button class="accordion">Current Projects</button>
+    <div class="panel">
+        <p2>
+            <ol>
+                <li>
+                    <span style="font-family: Print Bold;">This!</span>
+                    <ul>
+                        <li>Slowly improving what you're seeing on screen now</li>
+                        <li>Deployed using <a href="https://www.netlify.com" target="_blank">Netlify</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span style="font-family: Print Bold;">AmirDoesThings</span>
+                    <ul>
+                        <li>To-do list application for Android</li>
+                        <li>Developed using Android Studio</li>
+                        <li>Using <a href="https://firebase.google.com/" target="_blank">Firebase Realtime Database</a></li>
+                    </ul>
+                </li>
+            </ol>
+
+        </p2>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js\accordion.js"></script>
+
+</body>

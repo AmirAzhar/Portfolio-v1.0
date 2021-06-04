@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <button onclick="topFunction()" id="myBtn">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <head>
+    <title>Amir Azhar | Projects</title>
+    <link rel="icon" href="images/amirlogo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <ul class="nav" style="bottom: 0">
+    <li class="nameTitle"><a>Amir Azhar</a></li>
+    <li class="navOptions"><a href="about.html">About Me</a></li>
+    <li class="navOptions"><a href="contact.html">Contact</a></li>
+    <li class="navOptions activeOption">
+      <a href="projects.html">Projects</a>
+    </li>
+    <li class="navOptions"><a href="index.html">Home</a></li>
+  </ul>
+
+  <body>
+    <div class="content">
+      <p1 style="font-size: 50px">
+        <center>
+          Past Projects
+          <hr />
+        </center>
+
+        <div class="table">
+          <!-- First Project -->
+          <img
+            id="myImg"
+            src="images/recycleSG.png"
+            alt="user1"
+            class="modalPhoto"
+            onclick="openModal('modal1');"
+          />
+
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modal1')">&times;</span>
+              <div style="text-align: center">
+                <center>
+                  <img class="mySlides1" src="images/R1.png" />
+                  <img class="mySlides1" src="images/R2.png" />
+                  <img class="mySlides1" src="images/R3.png" />
+                  <img class="mySlides1" src="images/R4.png" />
+                </center>
+                <button class="leftBtn" onclick="plusSlides(-1, 0)">
+                  &#10094;
+                </button>
+                <button class="rightBtn" onclick="plusSlides(1, 0)">
+                  &#10095;
+                </button>
+              </div>
+              <p1 class="projTitle"> RecycleSG </p1>
+              <br />
+              <p1 class="projDesc"> Java </p1>
+              <br />
+              <br />
+              <p1 style="font-size: 20px">
+                RecycleSG is an Android application that aims to be an all
+                encompassing recycling app that encourages and motivates
+                Singaporeans to start the habit of recycling and also ensures
+                regular recyclers to continue their recycling efforts. RecycleSG
+                aims to be the app every Singaporean looks for when in need of
+                any information concerning recycling.
+                <br />
+                <br />
+                RecycleSG was developed by <i>Lee Raiyan Zulkifli</i> and I, as
+                part of NUS School of Computing module, CP2106 (Independent
+                Software Development Project). Our group was eventually
+                nominated for the Judge's Choice Award. Sadly the application is
+                not available in stores.
+              </p1>
+            </div>
+          </div>
+
+          <!-- Second Project -->
+          <img
+            id="myImg"
+            src="images/hallBooker.PNG"
+            alt="user2"
+            class="modalPhoto"
+            onclick="openModal('modal2');"
+          />
+
+          <div id="modal2" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modal2')">&times;</span>
+
+              <div style="text-align: center">
+                <center>
+                  <img class="mySlides2" src="images/placeholder.jpg" />
+                  <img class="mySlides2" src="images/placeholder.jpg" />
+                  <img class="mySlides2" src="images/placeholder.jpg" />
+                </center>
+                <button class="leftBtn" onclick="plusSlides(-1, 1)">
+                  &#10094;
+                </button>
+                <button class="rightBtn" onclick="plusSlides(1, 1)">
+                  &#10095;
+                </button>
+              </div>
+              <p1 class="projTitle"> Hallbooker </p1>
+              <br />
+              <p1 class="projDesc"> Java </p1>
+              <br />
+              <br />
+              <p1 style="font-size: 20px">
+                HallBooker is a desktop management system that aims to aid NUS
+                hall admins handle all their hall facility booking needs,
+                efficiently and effortlessly. Not only does it allow to keep
+                track of bookings, admins will have the ability to view the
+                layout, capacity and inventory of the facilities.
+                <br />
+                <br />
+                HallBooker was developed with my group consisting of
+                <i>Amos Chan Zhi Zheng, Alex Teo Kang Jie, Cheng Wanyin</i> and
+                <i>Chang Zhong Kai</i> as part of NUS School of Computing
+                module, CS2113T (Software Engineering and Object-Oriented
+                Programming).
+              </p1>
+            </div>
+          </div>
+        </div>
+      </p1>
+
+      <br />
+      <p1 style="font-size: 50px">
+        <center>
+          Current Projects
+          <hr />
+        </center>
+
+        <div class="table">
+          <!-- First Project -->
+          <img
+            id="myImg"
+            src="images/adt.png"
+            alt="user1"
+            class="modalPhoto"
+            onclick="openModal('modal3');"
+          />
+
+          <div id="modal3" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modal3')">&times;</span>
+              <div style="text-align: center">
+                <center>
+                  <img class="mySlides3" src="images/placeholder.jpg" />
+                  <img class="mySlides3" src="images/placeholder.jpg" />
+                  <img class="mySlides3" src="images/placeholder.jpg" />
+                </center>
+                <button class="leftBtn" onclick="plusSlides(-1, 2)">
+                  &#10094;
+                </button>
+                <button class="rightBtn" onclick="plusSlides(1, 2)">
+                  &#10095;
+                </button>
+              </div>
+              <p1 class="projTitle"> Amir Does Things </p1>
+              <br />
+              <p1 class="projDesc"> Java </p1>
+              <br />
+              <br />
+              <p1 style="font-size: 20px">
+                AmirDoesThings is an Android application that aims to be the
+                best to-do list app to ever exist.
+                <br />
+                <br />
+                AmirDoesThings is a solo pet project that is currently still a
+                work in progres. It was initially developed because I could not
+                find a to-do list app that was to my liking. So I tried making
+                my own!
+              </p1>
+            </div>
+          </div>
+        </div>
+      </p1>
+    </div>
+
+    <script src="js\modal.js"></script>
+    <script src="js\slide.js"></script>
+    <script src="js\toTop.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2e71b7649c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
