@@ -1,19 +1,19 @@
 /* The following is the styling for the text */
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
+body {
   padding: 0;
   margin: 0;
 }
 
 h1 {
-    text-align: center;
-    color: black;
-    font-family: Print Bold;
-    font-size: 80px;
+  text-align: center;
+  color: black;
+  font-family: Print Bold;
+  font-size: 80px;
 }
 
 p1 {
@@ -23,20 +23,20 @@ p1 {
   text-align: center;
 }
 
-hr{
-    width: 100px;
-    margin-top: 10px;
-    background-color: black;
-    border-color: black;
-    height: 0.5px;
+hr {
+  width: 100px;
+  margin-top: 10px;
+  background-color: black;
+  border-color: black;
+  height: 0.5px;
 }
 
 /* NAV BAR */
-.navOptions{
+.navOptions {
   float: right;
 }
 
-.navWrap{
+.navWrap {
   height: 10vh;
 }
 
@@ -62,7 +62,7 @@ hr{
   text-decoration: none;
 }
 
-.nameTitle{
+.nameTitle {
   float: left;
   font-family: Bolliver;
   font-size: 40px;
@@ -81,14 +81,14 @@ hr{
   opacity: 50%;
 }
 
-.activeOption{
-  border: black; 
-  border-radius: 10px; 
+.activeOption {
+  border: black;
+  border-radius: 10px;
   border-style: solid;
 }
 
 /* INDEX */
-.snap{
+.snap {
   position: relative;
   width: 100%;
   height: 90vh;
@@ -103,56 +103,57 @@ hr{
   display: none;
 }
 
-.snapSection{
+.snapSection {
   width: 100%;
   height: 90vh;
   background-size: cover;
   scroll-snap-align: start;
 }
 
-.animationWrap{
+.animationWrap {
   transform: translateY(125%);
   text-align: center;
 }
 
-.animatedText{
+.animatedText {
   position: relative;
   width: 700px;
   align-content: center;
   border-right: 4px solid;
   margin: 0 auto;
-  text-align: center; 
+  text-align: center;
   font-size: 100%;
   white-space: nowrap;
   overflow: hidden;
-  font-family: Print Regular; 
-  font-size: 100px; 
+  font-family: Print Regular;
+  font-size: 100px;
 }
 
-.typewriterAnimation{
-  animation: typewriter 3s steps(40) 1s 1 normal both, blinkTextCursor 500ms steps(40) infinite normal;
+.typewriterAnimation {
+  animation: typewriter 3s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
 }
 
-@keyframes typewriter{
-  from{
+@keyframes typewriter {
+  from {
     width: 0;
   }
-  to{
+  to {
     width: 650px;
   }
 }
 
-@keyframes blinkTextCursor{
-  from{
+@keyframes blinkTextCursor {
+  from {
     border-right-color: black;
   }
 
-  to{
+  to {
     border-right-color: transparent;
   }
 }
 
-.learnBtn{
+.learnBtn {
   font-family: Print Bold;
   font-size: 2vw;
   margin: 0 auto;
@@ -170,12 +171,16 @@ hr{
   transition: 0.3s;
 }
 
-@keyframes appear{
-  0%{opacity: 0;}
-  100%{opacity: 1;}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.learnBtn:hover{
+.learnBtn:hover {
   background: black;
   background-size: 400%;
   color: white;
@@ -184,7 +189,7 @@ hr{
   transform: scale(1.2);
 }
 
-.indexSection2Wrap{
+.indexSection2Wrap {
   margin: 0;
   padding: 0;
   padding-top: 4vh;
@@ -195,7 +200,7 @@ hr{
   text-align: center;
 }
 
-.indexSection3Wrap{
+.indexSection3Wrap {
   margin: 0;
   padding: 0;
   padding-top: 15vh;
@@ -206,18 +211,18 @@ hr{
   text-align: center;
 }
 
-.skillsIcon{
+.skillsIcon {
   display: inline-block;
   margin: 20px;
   transition-duration: 0.3s;
 }
 
-.skillsIcon:hover{
+.skillsIcon:hover {
   transform: scale(1.2);
 }
 
 /* ABOUT */
-.aboutWrap{
+.aboutWrap {
   display: inline-grid;
   grid-template-columns: 60vw 30vw;
   grid-gap: 3vw;
@@ -226,37 +231,37 @@ hr{
   justify-content: space-evenly;
 }
 
-.aboutHeader{
+.aboutHeader {
   padding: 0;
   margin: 0;
   font-size: 4vw;
   padding-bottom: 3vw;
 }
 
-.aboutDesc{
+.aboutDesc {
   font-size: 1.5vw;
 }
 
-.aboutText{
+.aboutText {
   text-align: justify;
   justify-content: center;
 }
 
-.amirPhoto{
+.amirPhoto {
   width: 30vw;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.socialsWrap{
+.socialsWrap {
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 3vw;
   padding-top: 2vw;
 }
 
-.socialsIcon{
+.socialsIcon {
   padding: 10px;
   width: 4vw;
   height: 4vw;
@@ -267,162 +272,166 @@ hr{
   cursor: pointer;
 }
 
-.content{
-    padding: 10px;
-    overflow: hidden;
+.content {
+  padding: 10px;
+  overflow: hidden;
 }
 
 .socialsIcon:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-.projTitle{
-    font-weight: bolder;
-    font-size: 30px;
+.projTitle {
+  font-weight: bolder;
+  font-size: 30px;
 }
 
-.projDesc{
-    font-weight: bolder;
-    color: grey;
-    font-size: 25px;
-    margin-top: -20px;
+.projDesc {
+  font-weight: bolder;
+  color: grey;
+  font-size: 25px;
+  margin-top: -20px;
 }
-
 
 /* The following is the styling for the modal box */
 .modal {
-    display: none; 
-    position: fixed;
-    z-index: 1; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: scroll;
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4); 
-  }
-  
-  .modal-content {
-    background-color: #fefefe;
-    margin: 10% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 50%;
-    text-align: justify; 
-    line-height: 25px;
-  }
-  
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 50px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .modalPhoto{
-      width:100%;
-      max-width: 300px;
-      cursor: pointer;
-      transition: 0.3s;
-      margin: 10px;
-      display: inline-block;
-      box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  
-  .modalPhoto:hover {
-      transform: scale(1.1);
-      box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
-  }
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
-  .table{
-      text-align: center;
-  }
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  text-align: justify;
+  line-height: 25px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modalPhoto {
+  width: 100%;
+  max-width: 300px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 10px;
+  display: inline-block;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.modalPhoto:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+}
+
+.table {
+  text-align: center;
+}
 
 /* The following is the styling for the "to Top" btn */
 #myBtn {
-    display: none; 
-    position: fixed; 
-    bottom: 40px; 
-    right: 40px; 
-    z-index: 99; 
-    border: none; 
-    outline: none; 
-    background-color: black; 
-    color: white; 
-    cursor: pointer;
-    width: 40px;
-    height: 40px; 
-    border-radius: 50%; 
-    font-size: 20px;
-    font-family: Brandon Bold;
-    content: \f077;
-    transition: 0.2s;
-  }
-  
-  #myBtn:hover {
-    transform: scale(1.1); 
-  }
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-family: Brandon Bold;
+  content: \f077;
+  transition: 0.2s;
+}
+
+#myBtn:hover {
+  transform: scale(1.1);
+}
 
 /* The following is the styling for slides */
-.mySlides1, .mySlides2, .mySlides3{
-    width: 100%;
-    max-width: 350px;
-    border-radius: 10px;
-    display: none;
+.mySlides1,
+.mySlides2,
+.mySlides3 {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  display: none;
 }
 
-.leftBtn, .rightBtn{
-    background-color: none;
-    border: none;
-    opacity: 60%;
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    margin-top: 10px;
+.leftBtn,
+.rightBtn {
+  background-color: none;
+  border: none;
+  opacity: 60%;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
-.leftBtn:hover, .rightBtn:hover{
-    opacity: 80%;
-    cursor: pointer;
+.leftBtn:hover,
+.rightBtn:hover {
+  opacity: 80%;
+  cursor: pointer;
 }
 
 button:focus {
-    outline:0;
+  outline: 0;
 }
 
 /* The following is the extra fonts used */
 
 @font-face {
-    font-family: Brandon Bold;
-    src: url(fonts/brandon_bld.otf);
+  font-family: Brandon Bold;
+  src: url(./Fonts/brandon_bld.otf);
 }
 
 @font-face {
-    font-family: Brandon Regular;
-    src: url(fonts/brandon_reg.otf);
+  font-family: Brandon Regular;
+  src: url(./Fonts/brandon_reg.otf);
 }
 
-@font-face{
-    font-family: Print Bold;
-    src: url(fonts/print_bold_ot.otf)
+@font-face {
+  font-family: Print Bold;
+  src: url(./Fonts/print_bold_ot.otf);
 }
 
-@font-face{
-    font-family: Print Regular;
-    src: url(fonts/print_clearly_ot.otf)
+@font-face {
+  font-family: Print Regular;
+  src: url(./Fonts/print_clearly_ot.otf);
 }
 
-@font-face{
-    font-family: Bolliver;
-    src: url(fonts/bolliver.ttf)
+@font-face {
+  font-family: Bolliver;
+  src: url(./Fonts/bolliver.ttf);
 }
 
 .email {
@@ -435,7 +444,7 @@ button:focus {
   color: #000;
 }
 
-.email:before{
+.email:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -450,7 +459,7 @@ button:focus {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.email:hover:before{
+.email:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
